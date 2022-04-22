@@ -13,7 +13,26 @@ from karel.stanfordkarel import *
 
 
 def main():
-    pass
+    #Algorithm
+    move()
+    pick_beeper()
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    put_99()
+    move()
+
+
+def turn_right():
+    for i in range(3):
+        turn_left()
+
+
+def put_99():
+    for i in range(99):
+        put_beeper()
 
 
 
